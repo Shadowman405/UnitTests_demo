@@ -13,5 +13,9 @@ class ViewController: UIViewController {
     func setVolume(value: Int) {
         volume = min(max(value, 0),100)
     }
+    
+    func charactersCompare(stringOne: String, stringTwo: String) -> Bool {
+        return Set(stringOne) == Set(stringTwo)
+    }
 }
 
